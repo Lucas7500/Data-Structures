@@ -2,11 +2,12 @@
 
 var bt = new BinarySearchTree();
 
-bt.InsertRecursively(5);
-bt.InsertRecursively(1);
-bt.InsertRecursively(2);
-bt.InsertRecursively(3);
-bt.InsertRecursively(4);
-bt.InsertRecursively(6);
-bt.InsertRecursively(7);
-bt.InsertRecursively(8);
+bt.Insert(5);
+bt.Insert(1);
+bt.Insert(2);
+bt.Insert(3);
+bt.Insert(4);
+bt.Insert(6);
+bt.Insert(7);
+bt.Insert(8);
+var a  = new BinarySearchTree();

@@ -2,7 +2,7 @@
 {
     public class BinarySearchTree : BinaryTree
     {
-        public void InsertRecursively(int data)
+        public void Insert(int data, bool recursively = true)
         {
             if (Root is null)
             {
@@ -10,18 +10,10 @@
                 return;
             }
 
-            InsertNodeRecursively(Root, data);
-        }
-
-        public void InsertIteratively(int data)
-        {
-            if (Root is null)
-            {
-                Root = new Node(data);
-                return;
-            }
-
-            InsertNodeIteratively(Root, data);
+            if (recursively)
+                InsertNodeRecursively(Root, data);
+            else
+                InsertNodeIteratively(Root, data);
         }
 
         private static void InsertNodeRecursively(Node root, int data)
